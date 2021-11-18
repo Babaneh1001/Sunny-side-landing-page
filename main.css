@@ -1,0 +1,486 @@
+/* Resetting and Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+:root{
+    --white: hsla(0, 0%, 100%, 1);
+    --transparent-white: hsla(0, 0%, 100%, 0.5);
+    --greyish-blue: hsl(210, 4%, 67%);
+    --dark-greyish-blue: hsl(232, 10%, 55%);
+    --very-dark-greyish-blue: hsl(213, 9%, 39%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(26, 100, 99);
+}
+
+a, ul, li {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--white);
+}
+
+
+
+/* Created a DIV tag containing the header and ROW 1 so they 
+can both share the same image  */
+.image-re {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+
+/* Start of Header Design */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+#hamburger-menu {
+    display: block;
+    float: right;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.header-logo {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: auto;
+} 
+
+nav li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 3s ease 0.2s ;
+}
+
+/* nav li a{ 
+    transition: all 0.3s ease 0s;
+} */
+
+nav li a:hover{ 
+    color: var(--dark-greyish-blue);
+}
+
+button {
+    background-color: var(--white);
+    font-family: "Fraunces", sans-serif;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 12.5px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: var(--transparent-white);
+}
+
+/* End of Header Design */
+
+
+
+/* Start of Row 1 */
+
+.row-1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-family: "Fraunces", sans-serif;
+    color: var(--white);
+}
+
+.arrow {
+    align-items: center;
+    padding-top: 40px;
+}
+
+/* End of Row 1 */
+
+
+/* -- Controls the Design for Row (1-3) -- */
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.row-2 {
+    padding-left: 200px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.row-3 {
+    padding-left: 200px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.row-4 {
+    padding-top: 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+.sub-head {
+    font-family: "Fraunces", sans-serif;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 40px;
+}
+
+.subtext {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: var(--greyish-blue);
+    padding-bottom: 30px;
+}
+
+.special {
+    font-family: "Fraunces", sans-serif;
+    font-size: 14px;
+    color: var(--very-dark-desaturated-blue);
+
+}
+
+.left {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.sub-head-sm {
+    font-family: "Fraunces", sans-serif;
+    font-size: 20px;
+    color: hsla(211, 28%, 19%, 0.856);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.right {
+    background-image: url(./images/desktop/image-photography.jpg);
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.r4 {
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: hsla(211, 28%, 19%, 0.637);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Images */
+.egg-bg {
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/desktop/image-transform.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.cup-bg {
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Row 5 */
+/* Contain elements in a Div that spans as a row */
+/* Elements in that row are stored in another DIV set
+to display as a column */
+
+
+
+.testimonial {
+    font-family: "Fraunces", sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: hsla(211, 28%, 19%, 0.856);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.row-5 {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.client-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-head {
+    margin-bottom: 30px;
+    border-radius: 100px;
+    width: 50px;
+}
+
+.bio {
+    color: var(--very-dark-desaturated-blue);
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.client-name  {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 16px;
+    color: hsla(211, 28%, 19%, 0.856);
+}
+
+.client-position {
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--greyish-blue);
+
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.carousel img{
+    justify-items: center;
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    /* background-position: center; */
+    object-position: center;
+}
+
+footer{
+    background-color: #91d4c6;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+}
+
+.logo-footer {
+    color: hsl(168, 46%, 31%);
+    padding-top: 2.5em;
+    font-weight: 800;
+    font-size: 19px;
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    word-spacing: 10;
+}
+
+.footer-links li{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: hsl(168, 46%, 31%);
+    font-weight: 500;
+
+}
+
+.icons img{
+    padding: 1em;
+    width: 50px;
+}
+
+@media screen and (min-width:716px) and (max-width:1100px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        justify-content: center;
+    }
+    
+    .sub-head {
+       font-size: 35px;
+       padding-bottom: 30px;
+    }   
+
+    .r4 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media screen and (min-width:200px) and (max-width:715px){
+    
+    .image-re {
+        background-image: url(./images/mobile/image-header.jpg);
+        background-size: cover;
+        background-position: right 50% bottom 30%;;
+        /* width: 100%; */
+        height: 450px;
+       
+    }
+
+    .menu-links {
+        display: none;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    .row-1 {
+        text-align: center;
+        padding-top: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 27.85px;
+        letter-spacing: 5px;
+    }
+
+    .arrow {
+        justify-content: center;
+        align-content: center;
+        width: 35px;
+        margin-top: 0.3%;
+        margin-bottom: 0px;
+    }
+
+    .flexible {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+    }
+
+    .sub-head {
+        text-align: center;
+        font-size: 30px;
+        padding: 50px 20px 40px 20px;
+        margin-top: 30px;
+    }
+
+    .subtext {
+        line-height: 1.6;
+        padding: 0 20px 10px 20px;
+        text-align: center justify;
+    }
+
+    .special {
+        margin-top: 20px;
+    }
+
+
+    .row-2 {
+        padding: 0 20px 50px 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .row-3 {
+         padding: 0 20px 50px 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .row-4 {
+        padding-top: 300px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonial {
+        text-align: center;
+        justify-content: center;
+        margin: 60px 20px 60px 20px;
+    }
+
+    .row-5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client-name {
+        padding: 20px 0 20px 0;
+    }
+
+    .client-position {
+        margin-bottom: 60px;
+    }
+
+    /* .client-profile .subtext-bio:nth-child(1){
+        background-color: black;
+    } */
+
+    /* testing the order property to manipulate what comes first */
+
+    .egg-bg {
+        order: -1;
+    }
+
+}
