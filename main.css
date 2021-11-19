@@ -182,6 +182,7 @@ button:hover {
     height: 500px;
     object-fit: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -200,6 +201,7 @@ button:hover {
     height: 500px;
     object-fit: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -222,6 +224,7 @@ button:hover {
     background-image: url(./images/desktop/image-transform.jpg);
     object-fit: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
@@ -232,6 +235,7 @@ button:hover {
     background-image: url(./images/desktop/image-stand-out.jpg);
     object-fit: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -481,6 +485,11 @@ footer{
 
     .egg-bg {
         order: -1;
+    }
+
+    .carousel {
+        width: 100%;
+        
     }
 
 }
