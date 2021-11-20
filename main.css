@@ -310,7 +310,7 @@ to display as a column */
 
 .carousel img{
     justify-items: center;
-    width: 50%;
+    width: 25%;
     height: 300px;
     object-fit: cover;
     /* background-position: center; */
